@@ -32,10 +32,6 @@ function DocsPage() {
                 <li><a href="#installation" className="block py-2 text-white font-semibold hover:text-purple-300">Installation</a></li>
                 <li><a href="#basic-commands" className="block py-2 text-gray-400 hover:text-white">Basic Commands</a></li>
               </ul>
-              <h3 className="text-purple-400 font-bold mt-8 mb-4">For Developers</h3>
-              <ul>
-                <li><a href="#api-contract" className="block py-2 text-gray-400 hover:text-white">API Contract</a></li>
-              </ul>
             </nav>
           </aside>
 
@@ -72,23 +68,7 @@ function DocsPage() {
             </section>
 
             {/* === THIS IS THE CORRECTED SECTION === */}
-            <section id="api-contract">
-              <div className="bg-gray-800/50 rounded-xl p-8">
-                <h2 className="text-3xl font-bold text-white mb-6">API Contract</h2>
-                <p className="text-gray-300 mb-4">
-                  For backend developers, the frontend communicates over WebSockets using the following events.
-                </p>
-                <div className="bg-black rounded-lg p-4 font-code text-sm">
-                  <p className="text-blue-400">// Frontend Emits:</p>
-                  <p className="text-white">{"socket.emit('VOICE_COMMAND', { command: '...' });"}</p>
-                  <br/>
-                  <p className="text-blue-400">// Frontend Listens For:</p>
-                  <p className="text-white">{"socket.on('UPDATE_CODE', (data) => { /* ... */ });"}</p>
-                  <p className="text-white">{"socket.on('CONSOLE_OUTPUT', (data) => { /* ... */ });"}</p>
-                  <p className="text-white">{"socket.on('ASSISTANT_RESPONSE', (data) => { /* ... */ });"}</p>
-                </div>
-              </div>
-            </section>
+            
 
           </main>
         </div>

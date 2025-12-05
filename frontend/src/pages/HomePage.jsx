@@ -118,7 +118,6 @@ function HomePage() {
       
       <Wave />
       <HowItWorks />
-      <SocialProof />
     </div>
   );
 }

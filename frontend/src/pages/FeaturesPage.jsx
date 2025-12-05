@@ -36,21 +36,11 @@ function UseCasesPage() {
         <p className="text-lg text-gray-300 mt-4 max-w-2xl mx-auto text-center">
           From writing boilerplate to complex git commands, your voice is the only tool you need.
         </p>
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
+        <div className="grid md:grid-cols-1 gap-8 mt-16">
           <UseCaseCard 
             title="Write Code" 
             description="Generate functions, classes, and logic in any programming language using natural speech."
             icon={<svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>}
-          />
-          <UseCaseCard 
-            title="Manage Files & Folders" 
-            description="Create, delete, rename, and navigate your project's file system without ever touching your mouse."
-            icon={<svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" /></svg>}
-          />
-          <UseCaseCard 
-            title="Version Control with Git" 
-            description="Stage your changes, write commit messages, and push to your repositories, all with simple voice commands."
-            icon={<svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>}
           />
         </div>
         <div className="text-center mt-20">
